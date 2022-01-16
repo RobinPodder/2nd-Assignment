@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amar Mart</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5d7d7e999a.js" crossorigin="anonymous"></script>
+
+    <style>
+        nav a{
+        text-decoration: none;
+        color: black;
+        margin-right: 15px;
+        }
+        nav {
+        display: flex;
+            justify-content: space-between;
+        
+        }
+        button{
+        font-size: 1em;
+        margin-left: 13px;
+        border: 3px outset lightgray ;
+        
+        padding: ;
+        color: white;
+        background-color: orangered;
+        }
+        
+        .half-width{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        
+        
+        }
+
+        .half-width img{
+            width: 50%;
+            
+        }
+        
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 80%;
+        }
+        .grid-cell{
+            font-size: 2em;
+           border: 3px solid goldenrod;
+        }
+
+        
+
+        section{
+            display: flex;
+        }
+        section-title{
+            text-align: center;
+        }
+
+        product-banner img{
+            width: 300px;
+            height: 256px;
+
+        }
+        .fa-star.filled{
+            color:  #FB8200;;
+        }
+        .fa-star{
+            color:  #e7cfb7;;
+            
+        }
+        .fa-star{
+            font-size: 12px;
+        }
+        .banner{
+            display: flex;
+
+        }
+
+        .main-banner{
+            display: grid;
+           
+            grid-template-columns: repeat(3, 1fr);
+           
+            grid-row-gap: 50px;
+
+            grid-column-gap: 50px;
+
+           grid width: 1047px;
+
+        grid height: 1662px
+
+        }
+
+        .grid-cell{
+            grid gap: 50px 50px;
+            
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .footer-content{
+            margin: ;
+           
+        }
+        footer{
+            background: black;
+            height: auto;
+            width: 100vw;
+            font-family: "open Sans";
+            padding-top: 40px;
+            color: white;
+        }
+
+        .fotter-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-content h3{
+            font-size: 1.8rem;
+            font-weight: 100;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+
+        .footer-content p{
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 14px;
+        }
+
+        .socials{
+            list-style: none;
+            color: ;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            
+        }
+        .footer-bottom{
+            text-align: center;
+        }
+        
+/** ============Responsive Part============**/
+
+/* Extra large = (Up To 1170px) = XL */
+@media (min-width: 1170px) {
+    .container {
+        max-width: 1170px;
+						background:green;
+    }
+}
+
+@media (max-width: 1170px) {
+
+	  .container {
+        max-width: 992px;
+						background:red;
+    }
+}
+
+
+
+/* Medium large = (992-768) = MD. */
+@media (max-width: 992px) {
+    .top-banner {
+        max-width: 992px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+						background:gray;
+                        
+    }
+    .main-banner{
+        max-width: 992px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        colum
+    }
+    .banner-discription{
+        display: grid-column: justify-self: ;;;
+    }
+
+    .half-width{
+        display: grid;
+    }
+    .half-width img{
+                 display: grid;
+                 width: 100%;
+                display: flex;
+        flex-direction: ;
+                grid-template-columns: repeat{1, 1fr};
+    }
+    .banner-one{
+        
+        width: 100%;
+        display: grid;
+                 width: 100%;
+                display: flex;
+        flex-direction: col;
+                grid-template-columns: repeat{1, 1fr};
+
+    }
+}
+}
+
+/* Tablet Devices = (768-576) = SM */
+@media (max-width: 767px) {
+    .top-banner {
+        max-width: 767px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+						background:gray;
+                        
+    }
+    .main-banner{
+        max-width: 767px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        colum
+    }
+    .banner-discription{
+        display: grid-column: justify-self: ;;;
+    }
+
+    .half-width{
+        display: grid;
+    }
+    .half-width img{
+                 display: grid;
+                 width: 100%;
+                display: flex;
+        flex-direction: ;
+                grid-template-columns: repeat{1, 1fr};
+    }
+    .banner-one{
+        
+        width: 100%;
+        display: grid;
+                 width: 100%;
+                display: flex;
+        flex-direction: col;
+                grid-template-columns: repeat{1, 1fr};
+
+    }
+}
+
+/* Big Mobile  = (576-420) = Extra-SM */
+@media (top-banner: 576px) {
+    .top-banner {
+        max-width: 767px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+						background:gray;
+                        
+    }
+    .main-banner{
+        max-width: 576px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        colum
+    }
+    .banner-discription{
+        display: grid-column: justify-self: ;;;
+    }
+
+    .half-width{
+        display: grid;
+    }
+    .half-width img{
+                 display: grid;
+                 width: 100%;
+                display: flex;
+        flex-direction: ;
+                grid-template-columns: repeat{1, 1fr};
+    }
+    .banner-one{
+        
+        width: 100%;
+        display: grid;
+                 width: 100%;
+                display: flex;
+        flex-direction: col;
+                grid-template-columns: repeat{1, 1fr};
+
+    }
+}
+
+/* Small Mobile = (420-320) = Extra-SM */
+@media (top-banner: 420px) {
+  .top-banner{
+				background:pink;
+                width: 100%;
+                display: none;
+                flex-direction: column;
+                grid-template-columns: repeat{1, 1fr};
+                
+
+}
+}
+
+
+
+
+
+        </style>
+
+
+
+</head>
+<body>
+    <header>
+    <nav>
+        <span>
+           <h1 style="margin-right: 13px;"  >AmarMart</h1> 
+            
+        </span>
+        <span>
+            <a href="">Home</a>
+            <a href="">Products</a>
+            <a href="">Signup</a>
+            <a href="">Login</a>
+            <a href=""><i class="fas fa-user"></i></i></a>
+            <a href=""><i class="fas fa-shopping-cart"></i></i></a>
+        </span>
+    
+    </nav> 
+    
+    </header>
+    
+
+    <section class="top-banner">
+        <div>
+            <h1 style="font-size: 4.5em;margin-left: 15px;">AmarMart Products</h1><br>
+            <h1 style="font-size: 1em; margin-left: 15px;">Hello, Welcome to AmarMart. Start Your Shopping Right Now</h1>
+            <h2 style="font-size: 1em;  margin-left: 15px;">Each purchase will be made with pleasure!</h2><br>
+        
+            <button type="submit">Bye Now <span><i class="fas fa-arrow-right"></i></span></button>
+        
+        </div>
+        
+        
+        <div class="half-width">
+            <img src="images/Sony.png" alt="">
+        </div>
+
+</section>
+
+
+
+    <div>  <h2 style="text-align: center; font-size: 2em;"> Popular Collection </h2></div><br><br><br>
+
+<section class="main-banner">
+    <div class="banner-one">
+          <div class="product-banner">
+          <img src="images/tripod.png" alt="">
+</div>
+<div class="banner-info">
+    <h3 style="font-size: 1.5em;" class="banner-info">Flex Tripod</h3>
+    <p style="font-size: 1.5em;">50.88$</p>
+    <p banner-discription>Worldwide shifting available <br>
+        Buyers protection possible</p>
+        <div class="banner-rattings">
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star half"></i>
+             4.5
+        </div>
+        
+
+</div>
+</div>
+    <div class="banner-one">
+          <div class="product-banner">
+          <img src="images/mic.png" alt="">
+</div>
+<div class="banner-info">
+    <h3 style="font-size: 1.5em;" class="banner-info">Microphone</h3>
+    <p style="font-size: 1.5em;">120.25$</p>
+    <p banner-discription>Worldwide shifting available <br>
+        Buyers protection possible</p>
+        <div class="banner-rattings">
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star half"></i>
+             4.5
+        </div>
+        
+
+</div>
+</div>
+    <div class="banner-one">
+          <div class="product-banner">
+          <img src="images/airpod.png" alt="">
+</div>
+<div class="banner-info">
+    <h3 style="font-size: 1.5em;" class="banner-info">Airbuds</h3>
+    <p style="font-size: 1.5em;">100.00$</p>
+    <p banner-discription>Worldwide shifting available <br>
+        Buyers protection possible</p>
+        <div class="banner-rattings">
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star half"></i>
+             4.5
+        </div>
+        
+
+</div>
+</div>
+    <div class="banner-one">
+          <div class="product-banner">
+          <img src="images/drone.png" alt="">
+</div>
+<div class="banner-info">
+    <h3 style="font-size: 1.5em;" class="banner-info">Drone</h3>
+    <p style="font-size: 1.5em;">980.25$</p>
+    <p banner-discription>Worldwide shifting available <br>
+        Buyers protection possible</p>
+        <div class="banner-rattings">
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star half"></i>
+             4.5
+        </div>
+        
+
+</div>
+</div>
+    <div class="banner-one">
+          <div class="product-banner">
+          <img src="images/lights.png" alt="">
+</div>
+<div class="banner-info">
+    <h3 style="font-size: 1.5em;" class="banner-info">Light Setup</h3>
+    <p style="font-size: 1.5em;">1200.00$</p>
+    <p banner-discription>Worldwide shifting available <br>
+        Buyers protection possible</p>
+        <div class="banner-rattings">
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star half"></i>
+             4.5
+        </div>
+        
+
+</div>
+</div>
+    <div class="banner-one">
+          <div class="product-banner">
+          <img src="images/setup.png" alt="">
+</div>
+<div class="banner-info">
+    <h3 style="font-size: 1.5em;" class="banner-info">Photoshoot Set</h3>
+    <p style="font-size: 1.5em;">820.40$</p>
+    <p banner-discription>Worldwide shifting available <br>
+        Buyers protection possible</p>
+        <div class="banner-rattings">
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star half"></i>
+             4.5
+        </div>
+        
+
+</div>
+</div>
+    <div class="banner-one">
+          <div class="product-banner">
+          <img src="images/camera.png" alt="">
+</div>
+<div class="banner-info">
+    <h3 style="font-size: 1.5em;" class="banner-info">Vlogging Camera</h3>
+    <p style="font-size: 1.5em;">1800.80$</p>
+    <p banner-discription>Worldwide shifting available <br>
+        Buyers protection possible</p>
+        <div class="banner-rattings">
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star half"></i>
+             4.5
+        </div>
+        
+
+</div>
+</div>
+    <div class="banner-one">
+          <div class="product-banner">
+          <img src="images/single-light.png" alt="">
+</div>
+<div class="banner-info">
+    <h3 style="font-size: 1.5em;" class="banner-info">Green Screen</h3>
+    <p style="font-size: 1.5em;">25.48$</p>
+    <p banner-discription>Worldwide shifting available <br>
+        Buyers protection possible</p>
+        <div class="banner-rattings">
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star half"></i>
+             4.5
+        </div>
+        
+
+</div>
+</div>
+    <div class="banner-one">
+          <div class="product-banner">
+          <img src="images/action.png" alt="">
+</div>
+<div class="banner-info">
+    <h3 style="font-size: 1.5em;" class="banner-info">Action camera</h3>
+    <p style="font-size: 1.5em;">380.00$</p>
+    <p banner-discription>Worldwide shifting available <br>
+        Buyers protection possible</p>
+        <div class="banner-rattings">
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star half"></i>
+             4.5
+        </div>
+        <br><br><br><br><br>
+        <button style="text-align: right;" type="submit">See more <span><i class="fas fa-arrow-right"></i></span></button><br><br><br><br><br><br><br><br>
+
+</div>
+</div>
+</section> 
+
+<section class="footer-last">
+
+<footer>
+ <div class="footer-content">
+        <h3 style="text-align: center;">AmarMart</h3>
+        <div class="footer-bottom">
+            <p>Thanks For Shopping.Stay with us.Keep Shopping and Stay Happy.</p>
+            <p>copyright &copy;2020 AmarMart Products</p>
+            <p>All rights reserved</p>
+        </div>
+<p style="text-align: center;">Connet With us</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+ </div>
+
+
+</footer>
+
+</section>
+
+
+
+
+
+
+
+
+</body>
+</html>
